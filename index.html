@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Subi Herbals</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">
+    <img src="logo 1.jpeg">
+  </div>
+   <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search products...">
+    </div>    
+    <div><button class="testbtn">search</button></div>
+      <div class="menu">
+    Home | Products | Contact
+  </div>
+</div>
+
+<div class="banner">
+  <image src="logo 1.jpeg"
+  
+  <h2>100% Natural Nalangu Maavu </h2>
+  
+  <p>Glowing skin | Chemical Free</p>
+ 
+</div>
+
+<div class="products">
+
+  <div class="product" onclick="showDetails('50gm')">
+    <img src="prodect.png">
+    <h2>50gm</h2>
+    <h3>₹45</h3>
+    <button onclick="buyNow(event,'50gm')">Buy Now</button>
+  </div>
+
+  <div class="product" onclick="showDetails('100gm')">
+    <img src="prodect.png">
+    <h2>100gm</h2>
+    <h3>₹90</h3>
+    <button onclick="buyNow(event,'100gm')">Buy Now</button>
+  </div>
+
+  <div class="product" onclick="showDetails('250gm')">
+    <img src="prodect.png">
+    <h2>250gm</h2>
+    <h3>₹240</h3>
+    <button onclick="buyNow(event,'250gm')">Buy Now</button>
+  </div>
+
+  <div class="product" onclick="showDetails('500gm')">
+    <img src="prodect.png">
+    <h2>500gm</h2>
+    <h3>₹480</h3>
+    <button onclick="buyNow(event,'500gm')">Buy Now</button>
+  </div>
+
+</div>
+
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <h2 id="productTitle"></h2>
+    <p>100% natural herbal bath powder made with traditional ingredients.</p>
+    <p>Good for glowing skin and daily use.</p>
+    <button onclick="buyNowDirect()">Buy Now</button>
+    <br><br>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+<!--use panrathu yepadi-->
+<div class="product-details">
+
+  <h2>🌿 நலங்குமாவு பயன்படுத்துவது எப்படி?</h2>
+
+  <p>
+  நலங்குமாவு (Nalangu Maavu) என்பது பாரம்பரிய குளியல் பொடி ஆகும். 
+  இது இயற்கையான மூலிகைகளால் தயாரிக்கப்பட்டது மற்றும் சரும சுத்திகரிப்பு, 
+  மணம் மற்றும் ஆரோக்கியமான தோலுக்கு உதவுகிறது.
+  </p>
+
+  <h3> பயன்படுத்தும் முறை:</h3>
+
+  <ul>
+    <li>✔ முதலில் சிறிய பகுதியில் பயன்படுத்தி allergy check செய்யவும்</li>
+    <li>✔ 2-3 ஸ்பூன் நலங்குமாவை தண்ணீர் / பால் சேர்த்து paste தயாரிக்கவும்</li>
+    <li>✔ ரோஸ் வாட்டர் / எலுமிச்சை சேர்க்கலாம் (optional)</li>
+    <li>✔ முகம், கை, கால்களில் மெதுவாக மசாஜ் செய்யவும்</li>
+    <li>✔ 10-15 நிமிடங்கள் காய விடவும்</li>
+    <li>✔ பின்னர் தண்ணீரால் நன்றாக கழுவவும்</li>
+  </ul>
+
+  <h3>✨ பயன்கள்:</h3>
+
+  <ul>
+    <li>🌿 சருமத்தை சுத்தமாக வைத்துக்கொள்ளும்</li>
+    <li>🌿 இயற்கையான glow தரும்</li>
+    <li>🌿 pimples மற்றும் oil control செய்யும்</li>
+    <li>🌿 குழந்தைகள் மற்றும் பெரியவர்களுக்கு பாதுகாப்பானது</li>
+  </ul>
+
+  <h3>📦 Price List:</h3>
+
+  <div class="price-box">
+    <p>50g pack: ₹45 + Shipping</p>
+    <p>100g pack: ₹90 + Shipping</p>
+    <p>250g pack: ₹240 + Shipping</p>
+    <p>500g pack: ₹480 + Shipping</p>
+    <p>1kg pack: ₹960 + Shipping</p>
+  </div>
+
+</div>
+<div class="details-img">
+
+  <div class="slider">
+    <img src="image1 (1).jpeg" width="400" height="600"class="slide active">
+        <img src="image1 (3).jpeg"  width="400" height="600"class="slide">
+                 </div>
+
+</div>
+<!-- REVIEWS -->
+<div class="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div class="review-box">⭐⭐⭐⭐⭐ Super product! Skin glow aguthu</div>
+  <div class="review-box">⭐⭐⭐⭐ Very good natural smell</div>
+  <div class="review-box">⭐⭐⭐⭐⭐ Worth for money</div>
+
+</div><footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- CONTACT INFO -->
+    <div class="footer-box">
+      <h3>Subi Herbals</h3>
+      <p>Natural & Pure Herbal Products</p>
+      <p>📞 +91 8220890588</p>
+      <p>📧 subiherbals@gmail.com</p>
+      <p>📍 Puducherry, India</p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact no</a>
+    </div>
+
+    <!-- POLICIES -->
+    <div class="footer-box">
+      <h3>Policies</h3>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Return Policy</a>
+      <a href="#">Shipping Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Subi Herbals. All rights reserved.
+  </div>
+
+</footer
+
+<div class="whatsapp" onclick="buyNowDirect()">💬</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
